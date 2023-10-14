@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+<div class="nav-buttons"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-button">Página Inicial</a></li>
+            <li><a href="pagina_conteudo.html" class="nav-button">Conteúdo</a></li>
+        </ul>
+    </nav>
+</div>
+    <main>
+        <form id="contato-form" action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" maxlength="100" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="100" required>
+
+            <label for="problema">Problemas:</label>
+            <select id="problema" name="problema" required>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Informação">Informação</option>
+                <option value="Dúvida">Dúvida</option>
+            </select>
+
+            <label for="data-hora">Data e Hora da Ocorrência:</label>
+            <input type="datetime-local" id="data-hora" name="data-hora" required>
+
+            <div id="botoes">
+                <button type="submit" id="enviar">Enviar</button>
+                <button type="reset" id="cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
